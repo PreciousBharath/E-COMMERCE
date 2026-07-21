@@ -1,0 +1,33 @@
+  Abstract
+1.Introduction
+2.Domain & Technology
+3.Problem Statement
+4.Industry Need & Motivation
+5.Project Objectives
+6.Existing System Analysis
+->6.1 Conventional Approach(Support vector machine)
+->6.2 Limitations of the existing system
+7.Proposed Smart Solution
+->7.1 System Overview
+->7.2 Advantages of the proposed CNN-Based system
+8.Technologies & Tools
+->8.2 Hardware requirements
+9.Working Methodology
+->9.1 Image Acquisition
+->9.2 Image Preprocessing
+->9.3 Feature Extraction
+->9.4 Dataset Preparation
+->9.5 CNN Model Training
+->9.6 Disease Classification
+->9.7 Output Generation &  Reporting
+
+10 Model Evaluation Metrics
+
+11 Applications
+->11.1 Real World Use cases(In tabular format)
+
+12 Future Enhancements
+13 Conclusions
+14 References
+
+ 

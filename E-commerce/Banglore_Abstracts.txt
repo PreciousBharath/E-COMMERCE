@@ -1,0 +1,13 @@
+1. PSSOFT006 ->  IMAG Garment: Fine-Grained Garment Generation for Controllable Fashion Design
+2. PSSOFT016->Autonomous Content Generation and Management for Startup Social media Marketing Using Agentic AI
+3.PSSOFT026->AI-Powered Embedded Systems for Predictive Maintenance in Industrial IoT Devices
+4.PSSOFT036->Federated Transfer learning for Early Detection of Multi-Organ Failure: A Scalable Predictive Healthcare Framework
+5.PSSOFTO46->Scalable Video Streaming Platform using Cloud Infrastructure
+6.PSSOFTO56->From Misinformation to Truth: Fake News Detection with Transformer based models
+7.PSSOFTO66->Cross Pipeline code Impact Analysis using vector Embeddings, Telemetry Traces, Graph and LLMs
+8.PSSOFT076->Distributed ML Pipeline using Google Cloud Vertex AI for Large Scale Data Processing and Model Deployment
+9.PSSOFT086->Real Time lane detection system using Computer Vision techniques with Object Detection
+10.PSSOFTO97->A IoT-Driven Smart Water Monitoring: A Solution Towards Sustainable Resource Management
+11.PSSOFT108->A Smart real-time tracking system using GSM/GPRS technologies
+12.PSSOFT118->Phishing Website Detection using Machine Learning and Real Time Email Notification System
+13.PSSOFT128->Comprehensive Analysis and Implementation Framework for Decentralized Voting System Using Ethereum Blockchain

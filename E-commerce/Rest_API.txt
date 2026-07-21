@@ -1,0 +1,478 @@
+
+1. 𝗥𝗘𝗦𝗧 𝗔𝗣𝗜𝘀 (𝗥𝗲𝗽𝗿𝗲𝘀𝗲𝗻𝘁𝗮𝘁𝗶𝗼𝗻𝗮𝗹 𝗦𝘁𝗮𝘁𝗲 𝗧𝗿𝗮𝗻𝘀𝗳𝗲𝗿 𝗔𝗣𝗜𝘀)
+
+ 𝗪𝗵𝗮𝘁 𝗶𝘀 𝗮𝗻 𝗔𝗣𝗜?
+
+ An API (Application Programming Interface) allows two applications to communicate with each other.
+
+ 𝗥𝗲𝗮𝗹-𝗟𝗶𝗳𝗲 𝗔𝗻𝗮𝗹𝗼𝗴𝘆
+
+Think of a restaurant:
+
+𝗖𝘂𝘀𝘁𝗼𝗺𝗲𝗿 → Client Application
+𝗪𝗮𝗶𝘁𝗲𝗿 → API
+𝗞𝗶𝘁𝗰𝗵𝗲𝗻 → Server/Database
+
+You place an order through the waiter (API), and the waiter brings back the food (data).
+
+---
+
+ 𝗪𝗵𝗮𝘁 𝗶𝘀 𝗮 𝗥𝗘𝗦𝗧 𝗔𝗣𝗜?
+
+
+A REST API is a web service that follows REST principles and uses HTTP methods to exchange data between client and server.
+ 
+𝗥𝗘𝗦𝗧 𝗔𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘂𝗿𝗲
+
+
++------------+       HTTP Request       +------------+
+|   Client   | -----------------------> |   Server   |
+| (Browser)  |                          |  REST API  |
++------------+ <----------------------- +------------+
+              HTTP Response
+
+
+
+𝗖𝗼𝗺𝗺𝗼𝗻 𝗛𝗧𝗧𝗣 𝗠𝗲𝘁𝗵𝗼𝗱𝘀
+
+
+| Method | Purpose             | Example              |
+| ------ | ------------------- | -------------------- |
+| GET    | Retrieve data       | Get user details     |
+| POST   | Create data         | Create a new account |
+| PUT    | Update entire data  | Update profile       |
+| PATCH  | Update partial data | Change email         |
+| DELETE | Remove data         | Delete account       |
+
+
+
+𝗘𝘅𝗮𝗺𝗽𝗹𝗲
+
+𝗥𝗘𝗦𝗧 𝗔𝗣𝗜 𝗥𝗲𝗾𝘂𝗲𝘀𝘁
+
+ 𝗚𝗘𝗧 𝗥𝗲𝗾𝘂𝗲𝘀𝘁
+
+
+
+GET https://jsonplaceholder.typicode.com/users/1
+
+ Response
+
+
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "email": "leanne@example.com"
+}
+
+
+ 𝗔𝗣𝗜 𝗘𝗻𝗱𝗽𝗼𝗶𝗻𝘁𝘀
+
+An endpoint is a URL used to access a resource.
+
+Example:
+
+```text
+https://api.company.com/users
+https://api.company.com/products
+https://api.company.com/orders
+
+
+ 𝗦𝘁𝗮𝘁𝘂𝘀 𝗖𝗼𝗱𝗲𝘀
+
+| Code | Meaning               |
+| ---- | --------------------- |
+| 200  | Success               |
+| 201  | Created               |
+| 400  | Bad Request           |
+| 401  | Unauthorized          |
+| 404  | Not Found             |
+| 500  | Internal Server Error |
+
+---
+
+ 2. 𝗝𝗦𝗢𝗡 𝗛𝗮𝗻𝗱𝗹𝗶𝗻𝗴
+
+𝗪𝗵𝗮𝘁 𝗶𝘀 𝗝𝗦𝗢𝗡?
+
+
+JSON (JavaScript Object Notation) is the most common format for exchanging data between applications.
+
+ 𝗘𝘅𝗮𝗺𝗽𝗹𝗲 𝗝𝗦𝗢𝗡
+
+json
+
+{
+  "name": "John",
+  "age": 25,
+  "city": "New York"
+}
+
+
+
+
+ 𝗝𝗦𝗢𝗡 𝗗𝗮𝘁𝗮 𝗧𝘆𝗽𝗲𝘀
+
+| Type    | Example         |
+| ------- | --------------- |
+| String  | "John"          |
+| Number  | 25              |
+| Boolean | true            |
+| Array   | [1,2,3]         |
+| Object  | {"name": "John"} |
+| Null    | null            |
+
+
+
+ 𝗣𝘆𝘁𝗵𝗼𝗻 𝗗𝗶𝗰𝘁𝗶𝗼𝗻𝗮𝗿𝘆 𝘃𝘀 𝗝𝗦𝗢𝗡
+
+𝗣𝘆𝘁𝗵𝗼𝗻 𝗗𝗶𝗰𝘁𝗶𝗼𝗻𝗮𝗿𝘆
+
+  python
+student = {
+    "name": "Alice",
+    "age": 20
+}
+
+
+ 𝗝𝗦𝗢𝗡 𝗙𝗼𝗿𝗺𝗮𝘁
+
+json
+{
+    "name": "Alice",
+    "age": 20
+}
+
+
+Difference:
+
+* Python uses single or double quotes.
+* JSON requires double quotes.
+
+---
+
+𝗖𝗼𝗻𝘃𝗲𝗿𝘁 𝗣𝘆𝘁𝗵𝗼𝗻 𝗢𝗯𝗷𝗲𝗰𝘁 𝘁𝗼 𝗝𝗦𝗢𝗡
+
+import json
+
+student = {
+    "name": "Alice",
+    "age": 20
+}
+
+json_data = json.dumps(student)
+
+print(json_data)
+```
+
+Output:
+
+json
+{"name": "Alice", "age": 20}
+
+
+---
+
+ 𝗖𝗼𝗻𝘃𝗲𝗿𝘁 𝗝𝗦𝗢𝗡 𝘁𝗼 𝗣𝘆𝘁𝗵𝗼𝗻 𝗢𝗯𝗷𝗲𝗰𝘁
+
+
+import json
+
+json_string = '{"name":"Alice","age":20}'
+
+data = json.loads(json_string)
+
+print(data["name"])
+
+
+Output:
+
+```text
+Alice
+```
+
+ 𝗥𝗲𝗮𝗱𝗶𝗻𝗴 𝗝𝗦𝗢𝗡 𝗙𝗶𝗹𝗲
+
+
+json
+{
+    "course": "Python",
+    "duration": "3 Months"
+}
+
+
+𝗣𝘆𝘁𝗵𝗼𝗻 𝗖𝗼𝗱𝗲
+
+
+import json
+
+with open("data.json") as file:
+    data = json.load(file)
+
+print(data)
+
+---
+
+ 𝗪𝗿𝗶𝘁𝗶𝗻𝗴 𝗝𝗦𝗢𝗡 𝗙𝗶𝗹𝗲
+
+import json
+
+data = {
+    "course": "Python",
+    "duration": "3 Months"
+}
+
+with open("output.json", "w") as file:
+    json.dump(data, file, indent=4)
+```
+
+---
+
+3. 𝗥𝗲𝗾𝘂𝗲𝘀𝘁𝘀 𝗟𝗶𝗯𝗿𝗮𝗿𝘆
+
+
+𝗪𝗵𝗮𝘁 𝗶𝘀 𝗥𝗲𝗾𝘂𝗲𝘀𝘁𝘀 𝗟𝗶𝗯𝗿𝗮𝗿𝘆?
+
+
+The Requests library is a Python package used to send HTTP requests to APIs and websites.
+
+Installation:
+
+bash
+pip install requests
+
+
+---
+
+𝗜𝗺𝗽𝗼𝗿𝘁 𝗥𝗲𝗾𝘂𝗲𝘀𝘁𝘀
+
+
+ 
+import requests
+
+url = "https://jsonplaceholder.typicode.com/users/1"
+
+response = requests.get(url)
+
+print(response.status_code)
+print(response.json())
+```
+
+Output:
+
+```text
+200
+{
+  'id': 1,
+  'name': 'Leanne Graham'
+}
+```
+
+---
+
+## POST Request Example
+
+import requests
+
+url = "https://jsonplaceholder.typicode.com/posts"
+
+data = {
+    "title": "Python",
+    "body": "Learning APIs",
+    "userId": 1
+}
+
+response = requests.post(url, json=data)
+
+print(response.status_code)
+print(response.json())
+
+
+Output:
+
+```json
+{
+  "title":"Python",
+  "body":"Learning APIs",
+  "userId":1,
+  "id":101
+}
+```
+
+---
+
+## PUT Request Example
+
+
+import requests
+
+url = "https://jsonplaceholder.typicode.com/posts/1"
+
+data = {
+    "title": "Updated Title"
+}
+
+response = requests.put(url, json=data)
+
+print(response.json())
+```
+
+---
+
+## DELETE Request Example
+
+
+import requests
+
+url = "https://jsonplaceholder.typicode.com/posts/1"
+
+response = requests.delete(url)
+
+print(response.status_code)
+```
+
+Output:
+
+```text
+200
+```
+
+---
+
+## Accessing Response Data
+
+response = requests.get(
+    "https://jsonplaceholder.typicode.com/users/1"
+)
+
+print(response.text)
+print(response.status_code)
+print(response.headers)
+print(response.json())
+```
+
+---
+
+ Sending Query Parameters
+
+URL:
+
+https://api.example.com/users?page=1
+
+
+
+params = {
+    "page": 1
+}
+
+response = requests. get(
+    "https://api.example.com/users",
+    params=params
+)
+
+print(response.url)
+
+Output:
+
+```text
+https://api.example.com/users?page=1
+
+
+## Sending Headers
+
+
+headers = {
+    "Authorization": "Bearer TOKEN"
+}
+
+response = requests.get(
+    "https://api.example.com/users",
+    headers=headers
+)
+
+
+---
+
+## API Authentication Example
+
+
+headers = {
+    "Authorization": "Bearer YOUR_API_KEY"
+}
+
+response = requests. get(
+    "https://api.example.com/data",
+    headers=headers
+)
+
+print(response.json())
+```
+
+---
+
+#Complete Workflow Example
+
+Weather Application Using API
+
+import requests
+
+city = "Hyderabad"
+
+url = f"https://api.example.com/weather?city={city}"
+
+response = requests.get(url)
+
+if response.status_code == 200:
+    data = response.json()
+
+    print("City:", data["city"])
+    print("Temperature:", data["temperature"])
+    print("Humidity:", data["humidity"])
+else:
+    print("Error fetching data")
+
+
+---
+
+# Interview Questions
+
+### 1. What is REST API?
+
+A web service that allows communication between client and server using HTTP methods.
+
+### 2. What is JSON?
+
+A lightweight data format used for data exchange between systems.
+
+### 3. Difference between GET and POST?
+
+* GET retrieves data.
+* POST sends data to create new resources.
+
+### 4. What does `response.json()` do?
+
+Converts JSON response into a Python dictionary.
+
+### 5. Why use the Requests library?
+
+It simplifies sending HTTP requests and handling API responses in Python.
+
+---
+
+## Summary
+
+
+REST API
+    ↓
+HTTP Request (GET/POST/PUT/DELETE)
+    ↓
+Server Processes Request
+    ↓
+JSON Response Returned
+    ↓
+Requests Library Receives Data
+    ↓
+Python Program Uses Data
+```
+
+T
